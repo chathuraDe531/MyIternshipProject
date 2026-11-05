@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wardiere Inc. - Hero Design</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="w-full min-h-screen">
+  <!-- FULL SCREEN HERO -->
+  <section class="relative w-full min-h-screen overflow-hidden bg-[#0b0015] text-white flex flex-col">
+    <!-- Background Gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#350b2c] via-[#13001d] to-[#080012]"></div>
+
+    <!-- Glow Effects -->
+    <div class="absolute top-[-15%] left-[40%] w-[500px] h-[400px] bg-purple-700/20 blur-[150px] rounded-full"></div>
+
+    <!-- Decorative Elements -->
+    <div class="absolute top-[38%] left-[5%] w-3 h-3 bg-pink-600 rounded-full"></div>
+    <div class="absolute top-[25%] right-[10%] w-3 h-3 bg-pink-600 rounded-full"></div>
+    <div class="absolute bottom-[25%] left-[56%] w-3 h-3 bg-pink-600 rounded-full"></div>
+
+    <div class="absolute bottom-[-55px] left-[-40px] w-32 h-32 bg-pink-700 rounded-full"></div>
+    <div class="absolute bottom-[10%] right-[-65px] w-36 h-36 bg-pink-700 rounded-full"></div>
+
+    <!-- Main Container -->
+    <div class="relative z-10 w-full min-h-screen flex flex-col px-6 sm:px-10 lg:px-16 xl:px-24">
+      <!-- NAVBAR -->
+      <nav class="w-full flex items-center justify-between py-7 md:py-9">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <span class="text-3xl font-bold">〽</span>
+          <h2 class="text-lg md:text-xl font-extrabold tracking-wide">
+            Wardiere Inc.
+          </h2>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-7 lg:gap-10 text-sm font-semibold">
+          <a href="#" class="hover:text-pink-400 transition">Home</a>
+          <a href="#" class="hover:text-pink-400 transition">About Us</a>
+          <a href="#" class="hover:text-pink-400 transition">Price</a>
+          <a href="#" class="hover:text-pink-400 transition">Login</a>
+
+          <a href="#" class="border border-white px-6 py-3 rounded hover:bg-white hover:text-black transition">
+            Start for free
+          </a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <button class="md:hidden text-3xl" aria-label="Open menu">☰</button>
+      </nav>
+
+      <!-- HERO CONTENT -->
+      <main class="flex-1 grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-8 md:py-0">
+        <!-- LEFT SIDE -->
+        <div class="relative z-20 max-w-2xl">
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[1.08] tracking-tight">
+            Hero<br />
+            Section Web<br />
+            Design
+          </h1>
+
+          <p class="mt-7 text-sm sm:text-base lg:text-lg text-gray-300 leading-relaxed max-w-lg">
+            Drives visitors to take action, tells your story and grab action
+            of the right audience
+          </p>
+
+          <!-- CTA BUTTON -->
+          <button
+            class="mt-9 flex items-center gap-3 bg-pink-700 hover:bg-pink-600 px-7 py-4 rounded-full font-bold text-sm md:text-base transition duration-300 hover:scale-105 shadow-lg shadow-pink-900/30">
+            <span class="w-3 h-3 bg-white rounded-full"></span>
+            ORDER NOW
+          </button>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="relative flex justify-center items-end h-full min-h-[350px] md:min-h-[500px]">
+          <!-- Image Glow -->
+          <div class="absolute bottom-10 w-72 h-72 lg:w-96 lg:h-96 bg-purple-700/20 blur-[100px] rounded-full"></div>
+
+          <!-- Profile Image -->
+          <img src="image.png" alt="Professional man"
+            class="relative z-10 -translate-y-72 w-auto h-[360px] sm:h-[430px] md:h-[480px] lg:h-[570px] xl:h-[650px] max-w-full object-contain object-bottom">
+
+          <!-- Decorative Curve -->
+          <div
+            class="absolute z-30 bottom-[40%] left-[5%] right-[5%] h-20 border-b-[3px] border-pink-600 rounded-[50%] -rotate-6">
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+</body>
+
+</html>
