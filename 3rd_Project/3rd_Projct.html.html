@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prodmast | Manufacturing Technology</title>
+
+  <!-- Tailwind CSS v4 browser build: useful for learning and prototyping -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: "Inter", sans-serif; }
+  </style>
+</head>
+
+<body class="min-h-screen bg-white text-slate-900">
+ <main class="min-h-screen w-full overflow-hidden bg-[#f2f7f7]">
+
+    <!-- NAVBAR -->
+    <header class="flex items-center justify-between gap-4 bg-[#f8f9fb] px-5 py-5 sm:px-8 lg:px-14">
+      <a href="#" class="flex items-center gap-2 font-bold tracking-tight text-slate-800">
+        <span class="flex h-8 w-8 items-center justify-center rounded-full bg-[#0d4143] text-lg text-white">P</span>
+        <span>Prodmast</span>
+      </a>
+
+      <nav class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+        <a href="#home" class="text-slate-600 transition-all hover:text-teal-900 hover:scale-110">Home</a>
+        <a href="#about" class="text-slate-600 transition-all hover:text-teal-900 hover:scale-110">About</a>
+        <a href="#services" class="text-slate-600 transition-all hover:text-teal-900 hover:scale-110">Services</a>
+        <a href="#contact" class="text-slate-600 transition-all hover:text-teal-900 hover:scale-110">Contact</a>
+      </nav>
+
+      <a href="#contact" class="rounded-full bg-[#0d4143] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#092f31]">
+        Sign Up
+      </a>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="relative px-5 pb-12 pt-12 text-center sm:px-8 sm:pt-16 lg:px-14 lg:pt-20">
+      <div class="mx-auto max-w-4xl">
+        <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-teal-800">Smarter industrial solutions</p>
+        <h1 class="text-3xl font-extrabold leading-tight tracking-tight text-[#20262b] sm:text-4xl md:text-5xl lg:text-[58px]">
+          The Future of Manufacturing
+          <span class="mt-1 block text-[#0d4143]">with Latest Technology</span>
+        </h1>
+        <p class="mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base">
+          Expert tech to elevate your manufacturing. Let's take your business further.
+        </p>
+
+        <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="#services" class="w-full rounded-full bg-[#0d4143] px-8 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#092f31] sm:w-auto">
+            Get Started
+          </a>
+          <a href="#about" class="w-full rounded-full border border-slate-200 bg-white px-8 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-teal-800 sm:w-auto">
+            Try Demo
+          </a>
+        </div>
+
+        <div class="mt-6 flex items-center justify-center gap-2 text-sm">
+          <span class="tracking-widest text-amber-400">★★★★★</span>
+          <span class="font-bold text-slate-800">5.0</span>
+        </div>
+        <p class="text-xs text-slate-500">from 80+ reviews</p>
+      </div>
+
+      <!-- Decorative floating icons -->
+      <div class="pointer-events-none absolute left-[7%] top-[36%] hidden h-9 w-9 items-center justify-center rounded-full border border-slate-400 bg-white text-lg text-teal-900 md:flex">↗</div>
+      <div class="pointer-events-none absolute left-[12%] top-[29%] hidden h-8 w-8 items-center justify-center rounded-full bg-[#0d4143] text-sm text-white md:flex">✦</div>
+      <div class="pointer-events-none absolute left-[12%] top-[48%] hidden h-7 w-7 items-center justify-center rounded-lg bg-lime-100 text-sm text-teal-900 md:flex">▣</div>
+      <div class="pointer-events-none absolute right-[12%] top-[39%] hidden h-9 w-9 items-center justify-center rounded-full border border-slate-400 bg-white text-lg text-teal-900 md:flex">≋</div>
+      <div class="pointer-events-none absolute right-[7%] top-[34%] hidden h-8 w-8 items-center justify-center rounded-full bg-lime-100 text-sm text-teal-900 md:flex">▥</div>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section id="services" class="grid grid-cols-1 items-stretch gap-4 px-5 pb-12 sm:grid-cols-2 sm:px-8 lg:grid-cols-5 lg:gap-5 lg:px-14">
+
+      <!-- Industrial image card -->
+      <article class="group relative min-h-64 overflow-hidden rounded-2xl sm:col-span-1 lg:min-h-52">
+        <img
+          src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=900&q=85"
+          alt="Industrial manufacturing pipes"
+          class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+      </article>
+
+      <!-- Partners card -->
+      <article class="flex min-h-52 flex-col justify-center rounded-2xl bg-[#0d4143] p-7 text-white">
+        <p class="text-3xl font-bold">100+</p>
+        <p class="mt-2 text-sm leading-5 text-white/80">Our Esteemed<br>Clients and Partners</p>
+      </article>
+
+      <!-- Projects card -->
+      <article class="flex min-h-52 flex-col justify-between rounded-2xl bg-white p-6 shadow-sm">
+        <div class="flex items-center justify-between">
+          <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-lime-100 text-sm text-teal-900">▣</span>
+          <span class="text-slate-400">⋮</span>
+        </div>
+        <div>
+          <p class="text-sm font-medium text-slate-600">Total Projects <span class="text-teal-800">● 8%</span></p>
+          <p class="mt-1 text-3xl font-bold tracking-tight text-slate-900">1951+</p>
+          <p class="mt-2 text-xs text-slate-500">Increase of <span class="font-semibold text-green-600">126</span> this month</p>
+        </div>
+      </article>
+
+      <!-- Experience card -->
+      <article class="flex min-h-52 flex-col items-center justify-center rounded-2xl bg-[#dfffc9] p-7 text-center text-slate-900">
+        <p class="text-3xl font-bold">6+</p>
+        <p class="mt-2 max-w-28 text-sm leading-5 text-slate-700">Years of Dedicated Service</p>
+      </article>
+
+      <!-- Productivity card -->
+      <article class="flex min-h-52 flex-col justify-end rounded-2xl bg-[#092f30] p-7 text-white">
+        <span class="mb-4 flex h-9 w-9 items-center justify-center rounded-full border border-white/50 text-lg">◉</span>
+        <p class="max-w-48 text-sm leading-6 text-white/85">Achieve Optimal Efficiency and Boost Productivity</p>
+      </article>
+    </section>
+
+    <!-- SMALL FOOTER -->
+    <footer id="contact" class="flex flex-col items-center justify-between gap-2 border-t border-slate-200/70 px-5 py-5 text-xs text-slate-500 sm:flex-row sm:px-14">
+      <span id="about">Prodmast — Manufacturing solutions for tomorrow.</span>
+      <span>© 2026 Prodmast. All rights reserved.</span>
+    </footer>
+  </main>
+</body>
+</html>
