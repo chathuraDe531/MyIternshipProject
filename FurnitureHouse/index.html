@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FurniHouse | Furniture & Electronics</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+
+        <div class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+
+            <!-- Logo -->
+            <a href="#home"
+               id="home-logo"
+               class="text-2xl font-bold text-amber-950">
+
+                FurniHouse<span class="text-amber-500">.</span>
+
+            </a>
+
+            <!-- Cart -->
+            <a href="#shopping-cart"
+               class="flex items-center gap-2 hover:text-amber-700">
+
+                <span class="text-xl">🛒</span>
+
+                <span id="cart-count"
+                      class="bg-amber-800 text-white px-2 py-1 rounded-full text-xs">
+                    0
+                </span>
+
+                <span class="font-semibold hidden sm:block">
+                    My Cart
+                </span>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section id="home"
+             class="max-w-7xl mx-auto px-5 py-8">
+
+        <div class="hero rounded-2xl p-8 md:p-16 text-white">
+
+            <p class="text-amber-200 font-semibold mb-3">
+                WELCOME TO FURNIHOUSE
+            </p>
+
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">
+                Make Your Home
+                <br>
+                Beautiful & Comfortable
+            </h1>
+
+            <p class="text-stone-200 max-w-md">
+                Discover quality furniture, stylish designs
+                and modern home appliances at affordable prices.
+            </p>
+
+            <a href="#products"
+               class="inline-block mt-6 bg-amber-600 hover:bg-amber-700
+                      px-6 py-3 rounded-lg font-semibold transition">
+
+                Explore Products
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main id="products"
+          class="max-w-7xl mx-auto px-5 pb-16">
+
+        <!-- Heading -->
+        <div class="mb-7">
+
+            <p class="text-amber-700 font-semibold text-sm">
+                OUR COLLECTION
+            </p>
+
+            <h2 class="text-3xl font-bold text-amber-950 mt-1">
+                Explore Our Products
+            </h2>
+
+            <p class="text-stone-500 mt-2">
+                Everything you need for your home and office.
+            </p>
+
+        </div>
+
+
+        <!-- Search -->
+        <div class="mb-6">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search furniture and appliances..."
+                class="w-full md:w-96 border border-stone-300
+                       rounded-xl px-4 py-3 outline-none
+                       focus:ring-2 focus:ring-amber-600">
+
+        </div>
+
+
+        <!-- MAIN CATEGORY FILTERS -->
+
+        <div class="flex gap-3 overflow-x-auto pb-4 mb-3">
+
+            <button class="category-btn active"
+                    data-category="All">
+
+                All Products
+
+            </button>
+
+            <button class="category-btn"
+                    data-category="Electric Items">
+
+                Electric Items
+
+            </button>
+
+            <button class="category-btn"
+                    data-category="Chairs">
+
+                Chairs
+
+            </button>
+
+            <button class="category-btn"
+                    data-category="Tables">
+
+                Tables
+
+            </button>
+
+            <button class="category-btn"
+                    data-category="Sofas">
+
+                Sofas
+
+            </button>
+
+            <button class="category-btn"
+                    data-category="Office Items">
+
+                Office Items
+
+            </button>
+
+        </div>
+
+
+        <!-- ELECTRIC SUBCATEGORIES -->
+
+        <div id="electric-subcategories"
+             class="hidden flex-wrap gap-2 mb-6">
+
+            <button class="subcategory-btn active"
+                    data-subcategory="All">
+
+                All Electric Items
+
+            </button>
+
+            <button class="subcategory-btn"
+                    data-subcategory="Oven">
+
+                Oven
+
+            </button>
+
+            <button class="subcategory-btn"
+                    data-subcategory="Fridge">
+
+                Fridge
+
+            </button>
+
+            <button class="subcategory-btn"
+                    data-subcategory="Washing Machine">
+
+                Washing Machine
+
+            </button>
+
+            <button class="subcategory-btn"
+                    data-subcategory="Toaster">
+
+                Toaster
+
+            </button>
+
+            <button class="subcategory-btn"
+                    data-subcategory="Air Fryer">
+
+                Air Fryer
+
+            </button>
+
+            <button class="subcategory-btn"
+                    data-subcategory="Microwave">
+
+                Microwave
+
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCTS AND CART -->
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+
+            <!-- PRODUCT LIST -->
+
+            <section class="lg:col-span-2">
+
+                <div id="product-list"
+                     class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+
+                    <!-- JavaScript displays products here -->
+
+                </div>
+
+            </section>
+
+
+            <!-- SHOPPING CART -->
+
+            <aside id="shopping-cart"
+                   class="bg-white rounded-2xl shadow-sm p-6 h-fit">
+
+                <h2 class="text-xl font-bold mb-5">
+                    🛒 Shopping Cart
+                </h2>
+
+
+                <!-- Cart Products -->
+
+                <div id="cart-items" class="space-y-4">
+
+                    <p class="text-center text-stone-400 py-6">
+                        Your cart is empty.
+                    </p>
+
+                </div>
+
+
+                <hr class="my-5">
+
+
+                <!-- Subtotal -->
+
+                <div class="flex justify-between mb-3">
+
+                    <span class="text-stone-500">
+                        Subtotal
+                    </span>
+
+                    <span id="subtotal" class="font-semibold">
+                        Rs. 0
+                    </span>
+
+                </div>
+
+
+                <!-- Shipping -->
+
+                <div class="flex justify-between mb-3">
+
+                    <span class="text-stone-500">
+                        Shipping
+                    </span>
+
+                    <span id="shipping" class="font-semibold">
+                        Rs. 0
+                    </span>
+
+                </div>
+
+
+                <!-- Total -->
+
+                <div class="flex justify-between border-t pt-4">
+
+                    <span class="font-bold text-lg">
+                        Total
+                    </span>
+
+                    <span id="total"
+                          class="font-bold text-xl text-amber-800">
+
+                        Rs. 0
+
+                    </span>
+
+                </div>
+
+
+                <!-- Checkout -->
+
+                <button id="checkout-btn"
+                        disabled
+                        class="w-full bg-amber-800 hover:bg-amber-900
+                               disabled:opacity-40 text-white py-3
+                               rounded-xl mt-6 font-semibold transition">
+
+                    Proceed to Checkout
+
+                </button>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-amber-950 text-white text-center py-8">
+
+        <h2 class="font-bold text-2xl">
+            FurniHouse.
+        </h2>
+
+        <p class="text-stone-300 text-sm mt-2">
+            Quality Furniture for Better Living.
+        </p>
+
+        <p class="text-stone-400 text-xs mt-4">
+            © 2026 FurniHouse. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
